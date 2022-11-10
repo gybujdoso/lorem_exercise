@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: #bac5dd;
+    font-family: 'Roboto', sans-serif;
+}
+
+#header {
+    height: 580px;
+    background-image: url('../img/picture1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#nav>ul>li {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+#nav>ul>li a:hover {
+    color: black;
+}
+
+#nav ul::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+#nav>ul>li>a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+}
+
+#header>h1 {
+    color: #fff;
+    font-size: 4.1rem;
+    position: absolute;
+    right: 150px;
+    bottom: 250px;
+}
+
+#nav {
+    background-color: #5473b4;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.has-submenu {
+    position: relative;
+}
+
+#nav .has-submenu::after{
+    content: '🢓';
+    color:white;
+    position: absolute;
+    top: 23px;
+    right: 30px;
+}
+
+#nav ul .has-submenu:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    position: absolute;
+    background-color: #5473b4;
+    width: 170px;
+    color: #fff;
+    display: none;
+}
+
+.submenu a {
+    color:white;
+    text-decoration: none;
+    padding: 10px;
+    display:block;
+}
+
+#container {
+    max-width: 856px;
+    width: 95%;
+    margin: 10px auto 100px auto;
+}
+
+#content {
+    background-color: #adadad;
+}
+
+p {
+    text-align: justify;
+    padding: 12px;
+}
+
+#upper_pic {
+    float: left;
+    margin-right: 15px;
+}
+
+#lower_pic {
+    float: right;
+    margin-left: 15px;
+}
+
+#content::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+#footer {
+    position: relative;
+    background-color: white;
+    height: 120px;
+}
+
+#footer>span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 18rem;
+    height: 1.2rem;
+    text-align: center;
+}
